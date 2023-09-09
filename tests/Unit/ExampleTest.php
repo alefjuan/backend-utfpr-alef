@@ -13,4 +13,21 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function teste1_strings_iguais(): void
+    {
+        $string1 = 'Teste!';
+        $string2 = 'Teste!';
+        $this->assertEquals($string1, $string2);
+    }
+
+    public function teste2_soma(): void
+    {
+        $num1 = 10;
+        $num2 = 10;
+        $expectedResult = 20;
+        $sum = $num1 + $num2;
+        $this->assertEquals($expectedResult, $sum);
+    }
+
 }
